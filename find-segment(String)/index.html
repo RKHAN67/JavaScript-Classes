@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Segment (String)</title>
+</head>
+<body>
+ 
+</body>
+<script>
+  let str = ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptate perspiciatis asperiores dolorum delectus, consequatur hic, deserunt omnis excepturi dolores obcaecati dignissimos, molestias nisi vero ipsa adipisci reprehenderit. Non, ea.`
+
+  let newStr = ""
+
+  for (let i=0; i < str.length; i++) {
+   if(str.slice(i, 12 + i) === 'ipus') {
+    //  console.log(`Segment found at index:`, i);
+     newStr = str.slice(0 , i)
+   }
+  } 
+  console.log(newStr);
+</script>
+</html>
