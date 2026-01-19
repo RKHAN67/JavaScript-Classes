@@ -13,8 +13,20 @@ let minutes = currentDate.getMinutes();
 let seconds = currentDate.getSeconds();
 
 const formattedDate = `
-${days[day]} ${date} ${months[month]} ${year} ${hours}:${minutes}:${seconds}`;
+${days[day]}
+${date}
+${months[month]}
+${year} ${hours}:${minutes}:${seconds}
+`;
 
 console.log(formattedDate);
 
-console.log(days[currentDate.getDay()], currentDate.getDate(), months[currentDate.getMonth()], currentDate.getFullYear(), currentDate.getHours(),':', currentDate.getMinutes(),':', currentDate.getSeconds());
+console.log(
+  days[currentDate.getDay()],
+  currentDate.getDate(),
+  months[currentDate.getMonth()],
+  currentDate.getFullYear(),
+  currentDate.getHours(), ':',
+  currentDate.getMinutes(), ':',
+  currentDate.getSeconds()
+);
