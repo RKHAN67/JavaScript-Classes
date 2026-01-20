@@ -12,6 +12,7 @@ let hours = currentDate.getHours();
 let minutes = currentDate.getMinutes();
 let seconds = currentDate.getSeconds();
 
+// Sir Example 
 const formattedDate = `
 ${days[day]}
 ${date}
@@ -21,6 +22,7 @@ ${year} ${hours}:${minutes}:${seconds}
 
 console.log(formattedDate);
 
+// My Example
 console.log(
   days[currentDate.getDay()],
   currentDate.getDate(),
