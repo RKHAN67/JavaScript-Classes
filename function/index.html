@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions</title>
+    <style>
+      * {
+        background-color: azure;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h1>Advance Function</h1>
+  </body>
   <script>
     // function sum(num1, num2){
     //     let result = num1 + num2;
@@ -20,15 +28,26 @@
     // sum(2);
     // sum(9, 8);
 
-    function sum(nums) {
+    // function sum(nums) {
+    //   let result = 0;
+    //   for (let i = 0; i < nums.length; i++) {
+    //     result += nums[i];
+    //   }
+    //   console.log(result);
+    // }
+
+    // sum(numbers);
+
+    function numberSum(numNumbers) {
       let result = 0;
-      for (let i = 0; i < nums.length; i++) {
-        result += nums[i];
+      for (let i = 0; i < numNumbers.length; i++) {
+        result = result + numNumbers[i];
       }
       console.log(result);
     }
     let numbers = [10, 20, 30, 40, 50];
+    let fullNumbers = [50, 50, 50, 100];
 
-    sum(numbers);
+    numberSum(fullNumbers);
   </script>
 </html>
